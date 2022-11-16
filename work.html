@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let arr = [0, 1, 2, 3];
+
+        // console.log(arr);
+
+        // // function foo(item){
+        // //     return item * 2;
+        // // }
+        // arr.map(function(a){
+        //     return a * 2;
+        // });
+
+        // arr.map(3);
+
+        // // arr.map(foo(2));
+
+        // console.log(arr);
+    </script>
+
+    <script>{
+        // function sum(a, b){
+        //     return a + b;
+        // }
+
+        // let sum = function(a, b){
+        //     return a + b;
+        // }
+
+
+        // let sum = (a, b) => a+b;
+
+        // let a = 3;
+        // let b = 4;
+        // let c = sum(a, b);
+        // console.log(c);
+
+    }
+    </script>
+
+    <script>
+    </script>
+
+<script>
+    
+    
+            // let arr = [4, 7, 2];
+            // console.log(arr);
+    
+            // arr = arr.map((item ,index) => item = index);
+            // console.log(arr);
+    
+            // const sum = (a, b, ...rest) =>{
+            //     return a + b + rest;
+            // }
+    
+            // console.log(sum(1, 2, 3));
+    // const obj = {
+    //     name: 'Dude',
+    //     age: 45
+    // }
+    
+    // const obj2 = {
+    //         ...obj,
+    //         tell: 624354762357
+    //     }
+
+    //     console.log(obj);
+    //     console.log(obj2);
+
+    //     const arr1 = [1,  2, 3, 5, 6];
+    //     const arr2 = [...arr1, 6, 8, 3];
+    //     console.log(arr1, arr2);
+
+    //     const {name: name1, age: age1} = obj;
+    //     console.log(name1, age1);
+    </script>
+
+    <!-- const obj2 = {
+        ...obj,
+        tell: 624354762357
+    } -->
+
+    <script>
+        class User{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                console.log(this.name + ' says: Hello!');
+            }
+
+            talk(phrase) {
+                console.log(this.name + ' says: ' + phrase);
+            }
+
+        }
+
+        let user1 = new User('Vladimir', 54);
+        user1.greet();
+        user1.talk('Hello dear!');
+
+        class Admin extends User{
+            constructor(name, age){
+                super(name, age);
+            }
+
+            kick(user, reason){
+                console.log(this.name + ' kicked ' + user.name + ' ,reason: ' + reason);
+            }
+        }
+
+        let admin1 = new Admin('John', 23);
+        admin1.kick(user1, 'stalking');
+    </script>
+</body>
+</html>
